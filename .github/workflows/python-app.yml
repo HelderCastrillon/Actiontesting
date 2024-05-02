@@ -38,5 +38,5 @@ jobs:
       run: |
         pytest
     - name: ejecutar script
-        run:|
+      run: |
         python main.py
