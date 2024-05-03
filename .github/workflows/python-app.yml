@@ -40,4 +40,6 @@ jobs:
         continue-on-error: true
     - name: ejecutar script
       run: |
+        echo "inicia la ejecución del proyecto main"
+        echo "::workflow-command parameter1={data},parameter2={data}::{command value}"
         python main.py
