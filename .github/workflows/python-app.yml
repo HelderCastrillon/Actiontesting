@@ -42,4 +42,5 @@ jobs:
       run: |
         echo "inicia la ejecución del proyecto main"
         echo "::workflow-command parameter1={data},parameter2={data}::{command value}"
-        python main.py
+        echo "finaliza la ejecución del proyecto main" ${{variables.VARIABLE_DE_PRUEBA}}
+        python main.py ${{secrets.SECRETO_DE_ESTADO}}
